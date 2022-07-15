@@ -18,7 +18,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="Recursos.qrc">
-    <normaloff>:/Img/Img1.png</normaloff>:/Img/Img1.png</iconset>
+    <normaloff>:/Nueva carpeta/Img1.png</normaloff>:/Nueva carpeta/Img1.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">
