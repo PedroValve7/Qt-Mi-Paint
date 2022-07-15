@@ -16,14 +16,23 @@
   <property name="windowTitle">
    <string>Principal</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="Recursos.qrc">
+    <normaloff>:/Img/Img1.png</normaloff>:/Img/Img1.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+color: rgb(0, 0, 0);</string>
+  </property>
   <widget class="QWidget" name="centralwidget"/>
+  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>17</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivo">
@@ -55,7 +64,6 @@
    <addaction name="menuEstilo"/>
    <addaction name="menuForma"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <action name="actionNuevo">
    <property name="text">
     <string>Nuevo</string>
@@ -97,6 +105,9 @@
    </property>
   </action>
   <action name="actionLineas">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Lineas</string>
    </property>
@@ -105,21 +116,38 @@
    <property name="checkable">
     <bool>true</bool>
    </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Libre</string>
    </property>
   </action>
   <action name="actionRect_nculos">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
    <property name="text">
-    <string>Rectánculos</string>
+    <string>Rectángulos</string>
    </property>
   </action>
   <action name="actionCircunferencias">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Circunferencias</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>
